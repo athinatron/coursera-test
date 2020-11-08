@@ -1,0 +1,191 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffffff;
+}
+
+/** HEADER **/
+
+#header-nav {
+    background-color: #8f8a84;
+    border: solid black 5px;
+    border-radius: 0;
+}
+
+#header-nav .container {
+    margin-left: 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+#nav-list a {
+    border: solid #000000 1px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#nav-list a:hover {
+    background-color: #8f8a84;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #000000;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+.navbar-header button.navbar-toggle.collapsed {
+    background-color: #8f8a84;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+
+.our_menu {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our_menu h2 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: .75;
+}
+
+#chicken-tile, #beef-tile, #sushi-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#chicken-tile {
+    background-color: #8f8a84;
+    background-position: center;
+}
+
+#beef-tile {
+    background-color: #8f8a84;
+    background-position: center;
+}
+
+#sushi-tile {
+    background-color: #8f8a84;
+    background-position: center;
+}
+
+#chicken-tile span, #beef-tile span, #sushi-tile span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#chicken-tile p, #beef-tile p, #sushi-tile p{
+    margin-top:40px;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#chicken-tile a, #beef-tile a, #sushi-tile a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: blue;
+}
+
+
+/* END HOME PAGE */
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) {
+    /*Header*/
+    #header-nav .container {
+        margin-bottom: 25px;
+    }
+    /* End Header */
+    /*Home Page*/
+    #chicken-tile a, #beef-tile a, #sushi-tile a{
+        visibility: hidden;
+    }
+    /*End Home Page*/
+}
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Header */
+    #header-nav .container {
+        margin-bottom: 25px;
+    }
+    /* End Header */
+    /* Home Page */
+    #sushi-tile {
+        margin: 0 auto 15px;
+    }
+
+    #chicken-tile a, #beef-tile a, #sushi-tile a{
+        visibility: hidden;
+    }
+    /* End Home Page */
+}
+
+/********** Extra Small devices only **********/
+
+@media (max-width: 767px) {
+    /* Header */
+    #header-nav .container {
+        margin-bottom: 25px;
+    }
+    #collapsable-nav a {
+        /* Collapsed nav menu text */
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+        /* Collapsed nav menu glyph */
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    /* End Header */
+    /* Home Page */
+    #chicken-tile, #beef-tile, #sushi-tile {
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+}
