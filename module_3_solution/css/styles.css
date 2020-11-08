@@ -63,7 +63,6 @@ body {
 .navbar-header button.navbar-toggle.collapsed {
     background-color: #8f8a84;
 }
-
 /* END HEADER */
 
 /* HOME PAGE */
@@ -136,8 +135,8 @@ body {
 
 @media (min-width: 992px) {
     /*Header*/
-    #header-nav .container {
-        margin-bottom: 25px;
+    #header-nav {
+        padding-bottom: 20px;
     }
     /* End Header */
     /*Home Page*/
@@ -151,8 +150,8 @@ body {
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* Header */
-    #header-nav .container {
-        margin-bottom: 25px;
+    #header-nav {
+        padding-bottom: 20px;
     }
     /* End Header */
     /* Home Page */
@@ -170,9 +169,6 @@ body {
 
 @media (max-width: 767px) {
     /* Header */
-    #header-nav .container {
-        margin-bottom: 25px;
-    }
     #collapsable-nav a {
         /* Collapsed nav menu text */
         font-size: 1.2em;
